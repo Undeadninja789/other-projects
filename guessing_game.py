@@ -4,6 +4,42 @@ while True: # this loop is to make the game repeatable
     tries = 0
     number = 0
     max_tries = 0
+    
+    num_of_players = int(input("Enter number of players from 1 to 6")):
+    if num_of_players==1:
+        continue
+    while num_of_players<1 or num_of_players>6:
+        print("Error,wrong invalid input given,try again: ")
+        num_of_players = int(input("Enter number of players from 1 to 6"))
+    if num_of_players==2:
+        p1_score=0
+        p2_score=0
+        print("Total players: 2")
+    elif num_ofplayers==3:
+        p1_score=0
+        p2_score=0
+        p3_score=0
+         print("Total players: 3")
+    elif num_ofplayers==4:
+        p1_score=0
+        p2_score=0
+        p3_score=0
+         print("Total players: 4")
+    elif num_ofplayers==5:
+        p1_score=0
+        p2_score=0
+        p3_score=0
+        p4_score=0
+        p5_score=0
+         print("Total players: 5")
+    elif num_ofplayers==6:
+        p1_score=0
+        p2_score=0
+        p3_score=0
+        p4_score=0
+        p5_score=0
+        p6_score=0
+         print("Total players: 6")
     number = random.randint(1,100)
     print("Welcome to guess game.")
     print("If you want to quit type q.")
